@@ -1,12 +1,13 @@
-import { Player } from "./../src/businessLogic.js";
+import { User } from "./../src/businessLogic.js";
 
-describe('Player', () => {
+describe('User', () => {
 
-  test('should create a new instance of Player', () => {
-    const player = new Player('andy');
-    expect(player.name).toEqual('andy');
-    expect(player.health).toEqual(50);
-    expect(player.strength).toEqual(50);
+  test('should create a new instance of User', () => {
+    const user = new User('andy', 37, 'male', 'usa');
+    expect(user.name).toEqual('andy');
+    expect(user.age).toEqual(37);
+    expect(user.sex).toEqual('male');
+    expect(user.country).toEqual('usa');
   });
 
 
