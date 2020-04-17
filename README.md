@@ -17,7 +17,7 @@ This site does not have a user interface but the Javascript is user accessible v
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
 | User enters their demographic information and the code creates an instance of the the class User which stores this information. | Name:Andy, Age:37, Country of Residence: USA | {user name = andy, sex = male, earthYears = 37, country = USA}|
-| Code returns users age in terms of solar years for the planets Mercury, Venus, Mars and Jupiter | earthYears:37 | mercuryYears:153.5, venusYears: 61.4, marsYears:20, jupiterYears:11.6|
+| Code returns users age in terms of solar years for the planets Mercury, Venus, Mars and Jupiter | earthYears:37 | mercuryYears:154, venusYears: 60, marsYears:20, jupiterYears:3|
 | Code returns users life expectancy, given provided demographic information | age:37, sex:male, country:usa| lifeExpectancy: 78.8 years|
 | Code returns number of years user is expected to live beyond today in Earth years and in terms of the solar years of Mercury, Venus, Mars and Jupiter| age:37, sex:male, country:USA | earthYearsExpected: 41.8, mercuryYearsExpected: 173.5, venusYearsExpected: 67.9, marsYearsExpected:22.2, jupiterYearsExpected:3.52|
 | If user age is already greater than life expectancy, code returns the value, in years, by which expectancy has been exceeded| age:82, sex:male, country:USA| 

@@ -11,7 +11,10 @@ export class User {
   }
 
   convertYears(){
-    this.mercuryYears = parseInt((this.earthYears*4.16).toFixed(1));
+    this.mercuryYears = parseInt((this.earthYears*4.16).toFixed(0));
+    this.venusYears = parseInt((this.earthYears*1.61).toFixed(0));
+    this.marsYears = parseInt((this.earthYears * .53).toFixed(0));
+    this.jupiterYears = parseInt((this.earthYears *.08).toFixed(0));
 
   }
 }
