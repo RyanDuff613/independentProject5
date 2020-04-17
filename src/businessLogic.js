@@ -28,16 +28,12 @@ export class User {
   }
 
   timeLeft(){
-    let timeLeftEarthYears = 0;
-    timeLeftEarthYears = this.lifeExpectancy() - this.earthYears;
-    let timeLeftMercuryYears = 0;
-    let timeLeftVenusYears = 0;
-    let timeLeftMarsYear = 0;
-    let timeLeftJupiterYears = 0;
-    timeLeftMercuryYears = (timeLeftEarthYears * 4.16).toFixed(0);
-    timeLeftVenusYears = (timeLeftEarthYears *1.61).toFixed(0);
-    timeLeftMarsYear = (timeLeftEarthYears * .53).toFixed(0);
-    timeLeftJupiterYears = (timeLeftEarthYears * .08).toFixed(0);
+    let timeLeftEarthYears = this.lifeExpectancy() - this.earthYears;
+    let timeLeftMercuryYears = (timeLeftEarthYears * 4.16).toFixed(0);
+    let timeLeftVenusYears = (timeLeftEarthYears *1.61).toFixed(0);
+    let timeLeftMarsYear = (timeLeftEarthYears * .53).toFixed(0);
+    let timeLeftJupiterYears = (timeLeftEarthYears * .08).toFixed(0);
+    this.yearsOnEachPlanet = [timeLeftEarthYears, timeLeftMercuryYears, timeLeftVenusYears, timeLeftMarsYear, timeLeftJupiterYears];
     return timeLeftEarthYears;
   }
 
