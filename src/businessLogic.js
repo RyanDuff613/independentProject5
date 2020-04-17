@@ -41,8 +41,12 @@ export class User {
     return timeLeftEarthYears;
   }
 
-  //yearsExceeded(){
-   // if (this.lifeExpectancy() > )
-  //}
+  yearsExceeded(){
+    const yearsExceeded = this.earthYears - this.lifeExpectancy();
+    if (this.lifeExpectancy() > this.earthYears){
+      return "keep on truckin";
+    } else{
+      return parseFloat(yearsExceeded.toFixed(2));
+    }    
+  }
 }
-
