@@ -14,7 +14,9 @@ describe('User', () => {
     expect(user.jupiterYears).toEqual(0);
   });
 
-  //test('should')
-
+  test('should adjust values for mercuryYears, venusYears, marsYears, jupiterYears', () => {
+    const user = new User('andy', 37, 'male', 'usa');
+    expect(user.mercuryYears).toEqual(156.8);
+  });
 
 });
