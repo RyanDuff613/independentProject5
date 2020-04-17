@@ -31,4 +31,9 @@ describe('User', () => {
     const user = new User('andy', 37, 'male', 'usa');
     expect(user.timeLeft()).toEqual(39.3);
   });
+
+  test('should return the amount of years user has exceeded expectancy if earthYears is greater than earthYears.lifeExpectancy()', () => {
+    const user = new User ('andy', 85, 'male', 'usa');
+    expect(user.yearsExceeded()).toEqual(8.7);
+  });
 });

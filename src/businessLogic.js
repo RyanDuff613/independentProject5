@@ -40,5 +40,9 @@ export class User {
     timeLeftJupiterYears = (timeLeftEarthYears * .08).toFixed(0);
     return timeLeftEarthYears;
   }
+
+  //yearsExceeded(){
+   // if (this.lifeExpectancy() > )
+  //}
 }
 
