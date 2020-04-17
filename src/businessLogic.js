@@ -15,7 +15,16 @@ export class User {
     this.venusYears = parseInt((this.earthYears*1.61).toFixed(0));
     this.marsYears = parseInt((this.earthYears * .53).toFixed(0));
     this.jupiterYears = parseInt((this.earthYears *.08).toFixed(0));
+  }
 
+  lifeExpectancy(){
+    let lifeExpectancy = 0;
+    if (this.sex === 'male'){
+      lifeExpectancy = 76.3;
+    } else{
+      lifeExpectancy = 81.4;
+    }
+    return lifeExpectancy;
   }
 }
 

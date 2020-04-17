@@ -24,7 +24,6 @@ describe('User', () => {
 
   test('shouold tell user their life expectancy based on their sex and country', () => {
     const user = new User('andy', 37, 'male', 'usa');
-    user.lifeExpectancy();
-    expect(user.lifeExpectancy()).toEqual(78.54);
+    expect(user.lifeExpectancy()).toEqual(76.3);
   });
 });
