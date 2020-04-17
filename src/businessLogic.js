@@ -9,4 +9,10 @@ export class User {
     this.marsYears = 0;
     this.jupiterYears = 0;
   }
-};
+
+  convertYears(){
+    this.mercuryYears = parseInt((this.earthYears*4.16).toFixed(1));
+
+  }
+}
+

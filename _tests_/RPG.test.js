@@ -8,7 +8,6 @@ describe('User', () => {
     expect(user.earthYears).toEqual(37);
     expect(user.sex).toEqual('male');
     expect(user.country).toEqual('usa');
-    expect(user.mercuryYears).toEqual(0);
     expect(user.venusYears).toEqual(0);
     expect(user.marsYears).toEqual(0);
     expect(user.jupiterYears).toEqual(0);
@@ -16,7 +15,8 @@ describe('User', () => {
 
   test('should adjust values for mercuryYears, venusYears, marsYears, jupiterYears', () => {
     const user = new User('andy', 37, 'male', 'usa');
-    expect(user.mercuryYears).toEqual(156.8);
+    user.convertYears();
+    expect(user.mercuryYears).toEqual(153);
   });
 
 });
