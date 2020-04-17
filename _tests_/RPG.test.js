@@ -26,4 +26,9 @@ describe('User', () => {
     const user = new User('andy', 37, 'male', 'usa');
     expect(user.lifeExpectancy()).toEqual(76.3);
   });
+
+  test('should return number of expected years remaining for user in terms of earthYears, mercuryYears, venusYears, marsYears and jupiterYears', () => {
+    const user = new User('andy', 37, 'male', 'usa');
+    expect(user.timeLeft()).toEqual(39.3);
+  });
 });
