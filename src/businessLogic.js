@@ -28,9 +28,17 @@ export class User {
   }
 
   timeLeft(){
-    let timeLeft = 0;
-    timeLeft = this.lifeExpectancy() - this.earthYears;
-    return timeLeft;
+    let timeLeftEarthYears = 0;
+    timeLeftEarthYears = this.lifeExpectancy() - this.earthYears;
+    let timeLeftMercuryYears = 0;
+    let timeLeftVenusYears = 0;
+    let timeLeftMarsYear = 0;
+    let timeLeftJupiterYears = 0;
+    timeLeftMercuryYears = (timeLeftEarthYears * 4.16).toFixed(0);
+    timeLeftVenusYears = (timeLeftEarthYears *1.61).toFixed(0);
+    timeLeftMarsYear = (timeLeftEarthYears * .53).toFixed(0);
+    timeLeftJupiterYears = (timeLeftEarthYears * .08).toFixed(0);
+    return timeLeftEarthYears;
   }
 }
 
