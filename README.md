@@ -2,7 +2,7 @@
 
 #### Epicodus Week Five | Intermediate JavaScript: Test Driven Development and Environments with JavaScript 
 
-#### By Ryan DufF
+#### By Ryan Duff
 
 ## Description
 This is a demonstration of skills learned in week 5 of the Epicodus Ruby/React curriculum. It uses Node Package Manager and Webpack to handle user and development dependencies. Jest is employed to run tests on the Javascript code. Babel is used to refactor the Javascript, which contains elements of ES6, into an earlier version of the language which is more readable by older browsers. The Javascript code creates an ES6 class that takes in data on a users age in Earth years and uses class methods to return that individuals age in solar years for Mercury, Venus, Mars and Jupiter. Another method takes in the users demographic information and returns a value for life expectancy. If that user has already exceeded their life expectancy, the method returns the number of years by which they have exceeded the expectancy.
