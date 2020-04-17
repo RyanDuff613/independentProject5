@@ -26,5 +26,11 @@ export class User {
     }
     return lifeExpectancy;
   }
+
+  timeLeft(){
+    let timeLeft = 0;
+    timeLeft = this.lifeExpectancy() - this.earthYears;
+    return timeLeft;
+  }
 }
 
