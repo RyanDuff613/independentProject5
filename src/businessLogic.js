@@ -1,8 +1,12 @@
 export class User {
   constructor(name, age, sex, country){
     this.name = name;
-    this.age = age;
+    this.earthYears = age;
     this.sex = sex;
     this.country = country;
+    this.mercuryYears = 0;
+    this.venusYears = 0;
+    this.marsYears = 0;
+    this.jupiterYears = 0;
   }
 };
